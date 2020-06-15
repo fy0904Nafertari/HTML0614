@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>beview视障产品</title>
+	<style type="text/css">
+		#all{
+			margin: 0 auto;
+			padding: 0;
+			width: 1200px;
+
+
+		}
+		.background{
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:100%;
+			height:100%;
+			z-Index:-1; 
+			
+		}
+		a{
+			text-decoration: none;
+			color: #ff8080;
+		}
+		#light{
+			display:none;
+			position:absolute;
+			top: 25%;
+			left:25%;
+			width:50%;
+			height:50%;
+			padding:16px;
+			border:16px solid orange;
+			background-color:white;
+			z-index:2;
+			overflow:auto;
+		}
+		.head img{
+			width: 200px;
+			height: 60px;
+		}
+		
+		.search{
+			float: right;
+			display: inline;
+				}
+		.nav {
+    width: 1200px;
+    height: 55px;
+    margin-top: 1px;
+    padding-top: 1px;
+    /*border-top: 1px solid #d6d6d6;*/
+    position: relative;
+    /*z-index: orange;*/
+    /*9999*/
+}
+		#menu{
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu li {
+
+	font-size: 9px;
+	color: grey;
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#menu li a {
+	width: 200px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "STXinwei";
+}
+#menu li a:hover {
+    color: white;
+    background-color: #f5deb3;
+}
+
+
+.ad{
+	
+	
+	height: 300px;
+	
+	position: relative;
+
+			left:0px;
+			top:0px;
+			width:100%;
+			
+			
+}
+
+.p{
+	text-align: center;
+	font-family: "STKaiti";
+	font-size: 25px;
+	color: red;
+	font-weight: bold;
+}
+input{
+	width: 120px;
+}
+.progrem img {
+	display: inline-block;
+	margin :5px;
+	padding: 5px;
+
+}
+.click{
+	display: none;
+}
+.bottom{
+    width: 100%;
+    background: #cf9e9e;
+    color: white;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+}
+.some{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: inline;
+	width: 200px;
+	height: 350px;
+	background-color: #778899;
+	color: black;
+	
+
+}
+.some a{
+	text-decoration:none;
+	color: black;
+}
+</style>
+</head>
+<body >
+		 <img  class="background" src="14.png" />
+</div>
+        <div id="light" >
+        
+         <br>
+         <form>
+        <table cellpadding="5" border="1" cellspacing="0" align="center">
+            <caption>
+                <h2>欢迎使用BeView</h2>  
+            </caption>
+            <tr>
+                <td width="100" align="right">联系人姓名（保密）</td>
+                <td><input type="text" name="username"/></td>
+            </tr>
+            <tr>
+                <td align="right">登录密码
+                </td>
+                <td>
+                    <input type="password" name="password1"/>
+                </td>
+            </tr>
+            
+            
+                <td align="right">
+                    电话号码
+                </td>
+                <td>
+                    <select name="phone-area">
+                        <option value="0">中国大陆 +86</option>
+                        <option value="1">中国台湾 +886</option>
+                        <option value="2">中国香港 +852</option>
+                        <option value="3">马来西亚 +60</option>
+                        <option value="4">新加坡 +65</option>
+                    </select>
+                    <input  type="text" name="phone-number" />
+                </td>
+            </tr>
+           
+            <tr>
+                <td></td>
+                <td>
+                    <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><input type="submit" value="登录" name="su" /><input type="submit" value="注册" name="su" /></a>
+                </td>
+            </tr>
+        </table>
+    </form>
+        <br><br>
+        </div>
+        <div id="fade" style="display:none;position:absolute;top:0%;left:0%;width:100%;height:100%;background-color:black;z-index:1;-moz-opacity:0.8;opacity:.80;filter:alpha(opacity=80);">
+        </div>
+        <div class="some">
+        	<a href="#">研发团队确立</a><br>
+        	<a href="#">团队愿景</a>
+        </div>
+	<div id="all">
+	<div class="head">
+		<!-- 头部div里包含一个logo和一个搜索div  -->
+		<img src="logo.png" logo.pngalt="这是logo">
+		<div class="search">
+			<!-- 搜索div里仅包含一个input和一个图标 -->
+		<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">登录</a>/
+		<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">注册</a>
+		</div>
+	</div>
+
+
+	
+<!-- 这是菜单部分 -->
+	<div class="nav">
+		<ul id="menu">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">产品中心</a></li>
+			<li><a href="#">购买</a></li>
+			<li><a href="#">帮助</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li>防伪码查询：<br><input type="text" name="" ><input type="submit" value="搜索" name="kk" style="width: 50px;"></li>
+		</ul>
+	</div>
+
+<!-- 接下来我想这个图片占一整行 -->
+	<div class="ad">
+		<img  class="ad" src="0.jpg" alt="广告">
+	</div>
+
+	<p class="p">旗下产品</p> 
+<!-- 这个p标签也占一整行 -->
+<div class="progrem">
+	<a href="#"><img src="1.png"></a>
+	<a href="#"><img src="2.png"></a>
+	<a href="#"><img src="7.png"></a>
+	<a href="#"><img src="3.png"></a>
+	<a href="#"><img src="4.png"></a>
+	<a href="#"><img src="5.png"></a>
+	<a href="#"><img src="6.png"></a>
+</div>
+<div class="bottom">
+        这是我们互联网加的项目，致力于残障人士（初步为视障人士）利用互联网方便生活和学习
+    </div>
+	
+</div>
+</div>
+</body>
+</html>
